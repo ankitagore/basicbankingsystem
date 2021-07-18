@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SS Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=KoHo:wght@700&family=Pattaya&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+        <section id="header">
+            <div class="container">
+                <div class="logoParent">
+                    <div><img src="images/logo.JPG" class="logo"></div>
+                    <div class="titlesss" >Sealed Safe Bank</div>   
+                    
+                </div>
+              
+                <div class="header-text">
+                    <span class="linee"></span><br><br>
+                    <h1>We’re next door & <br>here for you.</h1>
+                    <span class="square"></span>
+                    <p>Online, on the phone, or in one of our local bank branches. We’re here to help you write your story.No more waiting in the long queues ,transfer the money very conveniently with the help of our Sealed Safe Bank.</p>
+                    <a href="Register.php"><button class="button">Register Yourself</button></a>
+                    <div class="line">
+                        <span class="line1"></span><br><br>
+                        <span class="line2"></span><br><br>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <nav id="sideNav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="transfermoney.php">OUR CUSTOMERS</a></li>
+                <li><a href="transactionhistory.php">TRANSACTION HISTORY</a></li>
+                <li><a href="transfermoney.php">TRANSFER MONEY</a></li>
+                <li><a href="Register.php">NEW USER</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.gif" id="menuBtn">
+
+        <section id="features">
+            <div class="feature-row">
+                <div class="feature-col">
+                    <img src="images/customer.png">
+                   <a href="transfermoney.php"> <button class="button" >Our Customers</button></a>
+                </div>
+                <div class="feature-col">
+                    <img src="images/history.jpg">
+                    <a href="transactionhistory.php"><button class="button" >Transaction History</button></a>
+                </div>
+                <div class="feature-col">
+                    <img src="images/transfer.jpg">
+                    <a href="transfermoney.php"><button class="button" >Transfer Money</button></a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="footer">
+            <p style="text-align:center;color:rgb(11, 31, 68);">Don’t just save money, make more money with a checking account from us!💵💰💳</p>
+            <div class="icons">
+              <i class="fa fa-facebook-f" style="font-size:20px;"></i>
+              <i class="fa fa-twitter" style="font-size:20px;"></i>
+              <i class="fa fa-instagram" style="font-size:20px;"></i>
+              <i class="fa fa-linkedin" style="font-size:20px;"></i>
+            </div> 
+          </section>  
+
+        <script>
+            var menuBtn=document.getElementById("menuBtn");
+            var sideNav=document.getElementById("sideNav");
+            sideNav.style.right="-250px"
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0px";
+                }
+                else{
+                    sideNav.style.right="-250px";
+                }
+            }
+        </script>
+</body>
+</html>
